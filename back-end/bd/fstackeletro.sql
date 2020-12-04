@@ -40,5 +40,12 @@ CREATE TABLE `comentarios` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
-
+create table voltagem (
+id_voltagem int auto_increment,
+id_categoria int,
+voltagem varchar (10),
+primary key (id_voltagem),
+foreign key (id_categoria) references produtos (id)
+);
+select * from voltagem join produtos on produtos.id = voltagem.id_voltagem;
 
