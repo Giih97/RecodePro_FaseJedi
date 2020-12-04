@@ -1,0 +1,11 @@
+footer {
+    margin-top:auto;
+    display: flex;
+    text-align: center;
+}
+
+#formas_pagamento {
+    width: 200px;
+    margin:auto;
+
+}
