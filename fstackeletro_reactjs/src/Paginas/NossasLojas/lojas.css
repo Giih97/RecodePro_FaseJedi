@@ -1,14 +1,8 @@
-#titulo{
-    padding: 100px;
+#principal {
+    display: flex;
+    justify-content: center;
 }
-
-
 .lojas{
-    display: inline-flex;
-    justify-content:space-between;
-    width: 250px;
-    height: 250px;
-    border: 2px solid black;
-    text-align: center;
-    margin:10px;
+    padding: 10px;
+    margin-right: 20px;
 }

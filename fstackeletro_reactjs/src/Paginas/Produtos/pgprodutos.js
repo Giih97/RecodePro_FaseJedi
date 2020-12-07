@@ -6,19 +6,20 @@ import Categorias from '../../Componentes/Produtos/Categorias';
 export default function PageProdutos(props) {
 
     return (
-       
-        <>
 
-       
-      
-            <Col lg={3} md={4}>
+        <>
+        <Row>
+        <Col lg={3} md={4}>
                 <Categorias/>
-            </Col>
-           
-            <Col lg={5} md={4} className="mx-auto" >
-            <Produtos />
-            </Col>
-      
+            </Col> 
+            <Col lg={9} md={7}>
+                <Produtos/>
+            </Col> 
+        </Row>
+    
+
+
+        
         </>
         
     );

@@ -7,7 +7,7 @@ export default function Produtos(props) {
 
   useEffect(async () => {
     const resposta = await fetch(
-      "http://localhost/lojafullstackeletro/back-end/api/Produtos.php"
+      "http://localhost/lojafullstackeletro/back-end/api/select_destaques.php"
     );
     const dados = await resposta.json();
     setProdutos(dados);

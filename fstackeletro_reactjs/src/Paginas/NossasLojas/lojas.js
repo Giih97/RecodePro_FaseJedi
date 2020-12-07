@@ -7,11 +7,9 @@ export default function Lojas(props) {
         <Container Fluid>
             <h3 ><b>Lojas</b></h3>
         </Container>
-
-        <main id="principal">
-
-        
-        <Card style={{ width: '19rem' }} className="lojas d-flex">
+        <Container Fluid>
+        <div id="principal">
+        <Card style={{ width: '19rem' }} className="lojas">
         <Card.Body>
         <div>
         <Card.Title>Rio de Janeiro</Card.Title>
@@ -50,11 +48,10 @@ export default function Lojas(props) {
         </div>
         </Card.Body>  
         </Card>
-
-
-    </main>
+        </div>
+        </Container>
     </div>
-
+   
 
 
     );

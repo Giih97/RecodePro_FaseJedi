@@ -6,7 +6,7 @@ export default function Footer() {
         <footer>
             <div id="formas_pagamento">
                 <img src={formadepagamento} alt="formas de pagamento
-                 "style = {{width: "15rem"}}/>
+                 "style = {{width: "18rem"}}/>
             </div>
                 <br/>
             <div className="copyRecode">

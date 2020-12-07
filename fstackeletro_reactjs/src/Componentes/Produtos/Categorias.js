@@ -1,47 +1,25 @@
 import {ListGroup} from "react-bootstrap";
 import Produto from '../Produtos/Produto';
-import '../Produtos/script.js';
-import './categorias.css';
+import './Categorias.css';
 
 export default function Categorias(props) {
 
     const exibirCategoria = (evento) => {
         const categoria = evento.target.id;
-        let elementos = document.getElementsByClassName('CardP');
+        let elementos = document.getElementsByClassName('cardp');
         for(var i=0; i<elementos.length; i++){
 
-        if(categoria === elementos [i].id || categoria=== "todos"){
-                elementos[i].style = "display:inline-flex";
+        if(categoria === elementos [i].id || categoria=== "todos" || categoria=== "destaques"){
+                elementos[i].style = "display:block";
             }
+
                 else {
                     elementos[i].style = "display:none";   
+                    console.log(elementos);
             }
         }
     }
 
-
-/*function exibirCategoria(categoria){
-
-
-    let elementos=document.getElementsByClassName("categorias");
-    console.log(elementos);
-    for(var i=0; i<elementos.length; i++){
-        console.log (elementos[i].id);
-        if(categoria == elementos [i].id)
-            elementos[i].style = "display:block";
-        else
-            elementos[i].style = "display:none";
-    }
-} */
-
-
-/* para exibir todos produtos
-    let exibirTodos =()=> {
-    let elementos = document.getElementsByClassName ("categorias");
-    for (var i=0; i<elementos.length; i++) {
-    elementos[i].style = "display:block";
-}
-}*/
 
 
     return (
@@ -59,6 +37,7 @@ export default function Categorias(props) {
          
     <div className="lista">
         <ListGroup >
+            <ListGroup.Item action onClick={exibirCategoria} id="destaques">Destaques (3)</ListGroup.Item>
             <ListGroup.Item action onClick={exibirCategoria} id="todos">Todos (12)</ListGroup.Item>
             <ListGroup.Item action onClick={exibirCategoria} id="geladeira">Geladeiras (3)</ListGroup.Item>
             <ListGroup.Item action onClick={exibirCategoria} id="fogao">Fogões (2)</ListGroup.Item>
