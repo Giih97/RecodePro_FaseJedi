@@ -1,19 +1,25 @@
 import {ListGroup} from "react-bootstrap";
 import Produto from '../Produtos/Produto';
+<<<<<<< HEAD
 import './categorias.css';
+=======
+import './Categorias.css';
+>>>>>>> 6aa15cc24f1915cd08d8c14a91958e39edbbddef
 
 export default function Categorias(props) {
 
     const exibirCategoria = (evento) => {
         const categoria = evento.target.id;
-        let elementos = document.getElementsByClassName('CardP');
+        let elementos = document.getElementsByClassName('cardp');
         for(var i=0; i<elementos.length; i++){
 
-        if(categoria === elementos [i].id || categoria=== "todos"){
-                elementos[i].style = "display:inline-flex";
+        if(categoria === elementos [i].id || categoria=== "todos" || categoria=== "destaques"){
+                elementos[i].style = "display:block";
             }
+
                 else {
                     elementos[i].style = "display:none";   
+                    console.log(elementos);
             }
         }
     }
@@ -35,6 +41,7 @@ export default function Categorias(props) {
          
     <div className="lista">
         <ListGroup >
+            <ListGroup.Item action onClick={exibirCategoria} id="destaques">Destaques (3)</ListGroup.Item>
             <ListGroup.Item action onClick={exibirCategoria} id="todos">Todos (12)</ListGroup.Item>
             <ListGroup.Item action onClick={exibirCategoria} id="geladeira">Geladeiras (3)</ListGroup.Item>
             <ListGroup.Item action onClick={exibirCategoria} id="fogao">Fogões (2)</ListGroup.Item>
