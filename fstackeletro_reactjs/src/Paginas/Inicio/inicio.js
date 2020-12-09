@@ -5,8 +5,11 @@ import eletros from './eletros.png';
 
 
 
+
 export default function Inicio(props) {
     return (
+
+        <>
       <Container fluid>
       <Container>
           <h3 className="p-6 ml-0"><b>Seja Bem Vindo (a)!</b></h3>
@@ -34,6 +37,9 @@ export default function Inicio(props) {
 </Carousel>
 
 </Container>
+
+
+</>
 
 
     );

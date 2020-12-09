@@ -1,6 +1,5 @@
 import {ListGroup} from "react-bootstrap";
 import Produto from '../Produtos/Produto';
-import '../Produtos/script.js';
 import './categorias.css';
 
 export default function Categorias(props) {
@@ -19,29 +18,6 @@ export default function Categorias(props) {
         }
     }
 
-
-/*function exibirCategoria(categoria){
-
-
-    let elementos=document.getElementsByClassName("categorias");
-    console.log(elementos);
-    for(var i=0; i<elementos.length; i++){
-        console.log (elementos[i].id);
-        if(categoria == elementos [i].id)
-            elementos[i].style = "display:block";
-        else
-            elementos[i].style = "display:none";
-    }
-} */
-
-
-/* para exibir todos produtos
-    let exibirTodos =()=> {
-    let elementos = document.getElementsByClassName ("categorias");
-    for (var i=0; i<elementos.length; i++) {
-    elementos[i].style = "display:block";
-}
-}*/
 
 
     return (
