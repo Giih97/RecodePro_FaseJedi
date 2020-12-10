@@ -26,10 +26,10 @@ Criar banco de dados MySQL na Porta 3306 com nome fstackeletro. Executar comando
 - [x] Criação do JavaScript.
 - [x] Criação do Repositório no GitHub.
 - [x] Criação do Banco de dados.
-- [x]Criação do PHP.
+- [x] Criação do PHP.
 - [x] Criação do README.md.
 - [x] Adicionar Bootstrap.
 - [x] React js.
 - [x] JSON.
-- [] ...
+- []  ...
  
