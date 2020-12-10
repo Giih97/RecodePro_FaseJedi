@@ -12,12 +12,9 @@ Projeto criado com PHP, MySQL, React Js e Node.Js
 ####Instalação do projeto.
 
 
-Para execução é necessário salvar a pasta no diretório "C:\wamp64\www" abrir com powershell e digitar npm install , depois npm start dentro da pasta fstackeletro_reactjs. 
-
+Para execução é necessário salvar a pasta no diretório "C:\wamp64\www" abrir com powershell e digitar <b>npm install</b> , depois <b>npm start</b> dentro da pasta fstackeletro_reactjs.
 Para acessa o banco de dados é necessário ter o WAMP instalado. Obs: Não testado no XAMP.
--
-
-Criar banco de dados MySQL na Porta 3306 com nome fstackeletro. Executar comando SQL dentro da pasta back-end/bd.<p>
+Criar banco de dados MySQL na Porta 3306 com nome fstackeletro. Executar comando SQL dentro da pasta back-end/bd.
 
 
 ####A Fazer.
